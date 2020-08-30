@@ -70,7 +70,7 @@ function btns_convert(event){
         mostravalor();
     }
 
-    if(id == 'btn_alternado'){     
+    if (id == 'btn_alternado'){     
         function separa(){
             var text = pegavalor().toLowerCase();
             var separado = text.split('');
@@ -78,17 +78,40 @@ function btns_convert(event){
         }
         //console.log(separa());
         var qtdletras = separa().length;
-        var i = 0;
+        let i = 0;
         convert = separa();
        
         for(i; i < qtdletras; i=i+2){
                 //console.log(separa()[i]+' par');
             convert[i]= convert[i].toUpperCase();
-
         }
         convert = convert.join('');
         //console.log(convert);
         mostravalor();
+    }
+
+    if (id == 'btn_inverte'){
+        let div = pegavalor().split('');       
+        let invert = div.reverse();
+        convert = invert.join('');
+        mostravalor();     
+    }
+    if (id == 'btn_seleciona'){
+        document.getElementById("area_conversor").select();
+    }
+    if (id == 'btn_primeira_palavra'){
+
+        var space = pegavalor();
+        let qtd_palavras = space.length;
+        console.log(space.split(''));
+
+        let i = 0;
+        /* for(i; i < qtd_palavras; i++){
+            
+
+        } */
+
+
 
     }
 }
