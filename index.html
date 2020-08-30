@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>YourConverter</title>
+        <link rel = "stylesheet" href="style.css">
+        <link rel = "stylesheet" href="cssreset.css">
+        <link rel = "shurtcut icon" href="../imagens/icon.png">
+    </head>
+
+    <body>     
+
+       <Header>
+            <div class= "logo">
+                       
+                <img src = "../imagens/logo.png" alt = " logo do YourConverter" draggable = "false">
+
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href = "#home">Home</a></li>
+                    <li><a href = "#conversor">Conversor</a></li>
+                    <li><a href = "#contador">Contador </a></li>
+                    <li><a href = "#sobre">Sobre</a></li>
+                </ul>
+            </nav>
+        </header>
+
+            <main>  
+                <div id = "home">              
+                    
+                    <div class = "inhome" >
+                    </div>
+
+                    <div class = "bg_home">
+                    </div>
+
+                    <div class = "text_container">
+                        <div class = "content">
+                            <h1>YOU<span>CONVERTER</span></h1>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Libero molestiae omnis velit modi veritatis et saepe laborum doloremque, 
+                                officiis sunt commodi voluptates quos totam expedita deserunt atque enim cumque numquam!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+             
+                    <div id= "conversor">          
+                        <form class = "form_conversor">
+                            <label class = "titulo_conversor" for= "area_conversor">       
+                                <h2> CONVERSOR DE CARACTERES</h2>
+                            </label>
+                        
+                            <textarea id= "area_conversor" name = "area_conversor"></textarea>
+                            
+                        </form>
+                        
+                        <section class = "botoes_cvs">
+                           
+                                <button type = 'button' class = 'all_btn' id = 'btn_alternado'>ALTERNADO</button>
+                                <button type = 'button' class = 'all_btn' id = 'btn_minuscula'>MINÚSCULA</button>
+                                <button type = 'button' class = 'all_btn' id = 'btn_maiuscula'>MAIÚSCULA</button>
+                                <button type = 'button' class = 'all_btn' id = 'btn_seleciona'>SELECIONA TEXTO</button>
+                                <button type = 'button' class = 'all_btn' id = 'btn_seleciona'>INVERTER TEXTO</button>
+                                <button type = 'button' class = 'all_btn' id = 'tn_primeira'>PRIMEEIRA LETRA DE CADA PALAVRA</button>
+
+                            </div>
+                        </section>
+                    </div>
+        
+                <div id = "contador">
+                    <form class = "form_contador" >
+                        <label class = "titulo_contador" for = "area_contador" >
+                            <h2> CONTADOR DE CARACTERES</h2>
+                        </label>
+                        <textarea id = "area_contador" name = "area_contador"></textarea>
+                        
+                    </form>
+                    <section class = "botoes_contador">
+
+                    </section>
+
+                </div>
+
+                <div id ="sobre">
+                    <div class = "faixa">
+                        <div class = "foto" alt = "foto do desenvolvedor">
+                        </class>
+                    </div>
+                </div>   
+            </main>
+        <footer>
+        </footer>
+
+        <script type = "text/javascript" src = "script.js"> </script>
+    </body>
+</html>
